@@ -9,7 +9,7 @@ function ShortUrl() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3080/api/user/shorten', { url: inputUrl });
+            const response = await axios.post('http://shorten-url-backend-sigma.vercel.app/api/user/shorten', { url: inputUrl });
             setShortenedUrl(response.data.url);
         } catch (error) {
             console.error('Error shortening URL:', error);
