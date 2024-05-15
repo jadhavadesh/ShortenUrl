@@ -10,17 +10,17 @@ export const shortUrlService = {
 
 // shorte url Service
 function shortenUrlService(url) {
-  return http.post(`https://shorten-url-backend-sigma.vercel.app/api/shorten`, url);
+  return http.post(`${process.env.SERVER_URL}/api/shorten`, url);
 }
 
 // get all urls
 function getAllUrlsService(url) {
-    return http.get(`https://shorten-url-backend-sigma.vercel.app/api/urls`);
+    return http.get(`${process.env.SERVER_URL}/api/urls`);
 }
 
 // Update short code
 function updateShortCodeService(payload) {
-    return http.post(`https://shorten-url-backend-sigma.vercel.app/api/update-short-url`, payload);
+    return http.post(`${process.env.SERVER_URL}/api/update-short-url`, payload);
 }
 
 
