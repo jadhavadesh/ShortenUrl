@@ -15,12 +15,12 @@ function shortenUrlService(url) {
 
 // get all urls
 function getAllUrlsService(url) {
-    return axios.get(`${process.env.PROD_URL}/api/urls`);
+    return http.get(`${process.env.PROD_URL}/api/urls`);
 }
 
 // Update short code
 function updateShortCodeService(payload) {
-    return axios.post(`${process.env.PROD_URL}/api/update-short-url`, payload);
+    return http.post(`${process.env.PROD_URL}/api/update-short-url`, payload);
 }
 
 
