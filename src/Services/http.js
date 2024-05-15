@@ -16,7 +16,7 @@ axios.defaults.headers.common.Accept = "application/json";
 axios.defaults.headers.common["Content-Type"] = "application/json";
 axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
 axios.defaults.headers.common["Access-Control-Allow-Credentials"] = true;
-axios.defaults.baseURL = process.env.SERVER_URL;
+// axios.defaults.baseURL = process.env.SERVER_URL;
 
 axios.interceptors.response.use(
   (response) => {
