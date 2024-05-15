@@ -10,17 +10,17 @@ export const shortUrlService = {
 
 // shorte url Service
 function shortenUrlService(url) {
-  return axios.post(`${process.env.SERVER_URL}/api/shorten`, url);
+  return axios.post(`${process.env.REACT_APP_SERVER_URL}/api/shorten`, url);
 }
 
 // get all urls
 function getAllUrlsService(url) {
-    return axios.get(`${process.env.SERVER_URL}/api/urls`);
+    return axios.get(`${process.env.REACT_APP_SERVER_URL}/api/urls`);
 }
 
 // Update short code
 function updateShortCodeService(payload) {
-    return axios.post(`${process.env.SERVER_URL}/api/update-short-url`, payload);
+    return axios.post(`${process.env.REACT_APP_SERVER_URL}/api/update-short-url`, payload);
 }
 
 
